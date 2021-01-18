@@ -1032,11 +1032,14 @@ img {
   width: 16px;
   height: 15px;
 
-  background-color: var(--primary-white-color);
-  background-image: url(../images/svg/vector.svg);
+  border: 2px solid var(--title-text-color);
+  border-radius: 2px;
 
-  transition: background-image var(--primary-duration) var(--timing-function),
-    background-color var(--primary-duration) var(--timing-function);
+  background-color: var(--primary-white-color);
+  /* background-image: url(../images/svg/vector.svg); */
+
+  transition: background-color var(--primary-duration) var(--timing-function),
+    border-color var(--primary-duration) var(--timing-function);
 }
 
 .checkbox:checked ~ .label-checkbox::after {
@@ -1051,7 +1054,7 @@ img {
 }
 
 .checkbox:focus ~ .label-checkbox::after {
-  outline: 1px solid var(--title-text-color);
+  border-color: var(--accent-color);
 }
 
 .check-link {
