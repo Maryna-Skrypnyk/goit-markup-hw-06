@@ -1027,7 +1027,7 @@ img {
   top: 50%;
   left: 12px;
   transform: translateY(-50%);
-
+  display: inline-block;
   margin-right: 6px;
   width: 16px;
   height: 15px;
@@ -1048,6 +1048,10 @@ img {
   background-origin: border-box;
 
   border-radius: 2px;
+}
+
+.checkbox:focus ~ .label-checkbox::after {
+  outline: 1px solid var(--title-text-color);
 }
 
 .check-link {
