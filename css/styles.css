@@ -706,7 +706,7 @@ footer {
 /* Оформление формы в footer */
 
 .subscribe {
-  /* margin-left: 94px; */
+  margin-left: 94px;
 
   width: 570px;
   height: 86px;
